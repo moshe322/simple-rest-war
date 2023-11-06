@@ -16,13 +16,19 @@
 
   <dependencies>
     <dependency>
-   <groupId>org.apache.maven.plugins</groupId>
-   <artifactId>maven-compiler-plugin</artifactId>
-   <version>3.11.0</version>
-      <configuration>
+   <build>
+    <plugins>
+        <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-compiler-plugin</artifactId>
+            <version>3.11.0</version>
+            <configuration>
                 <source>9</source>
                 <target>9</target>
             </configuration>
+        </plugin>
+    </plugins>
+</build>
 </dependency>
     <dependency>
       <groupId>javax.ws.rs</groupId>
